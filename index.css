@@ -6,3 +6,10 @@ ul,li
 {
     display: inline;
 }
+.img-txt{
+    margin-top: 2rem;
+}
+.img1{
+    margin: 20px;
+    float: right;
+}
