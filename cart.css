@@ -1,6 +1,11 @@
 li{
     text-decoration: none;
 }
-.same{
+.card{
     float: left;
+    margin-right:100px;
+}
+.detail{
+   padding: 2rem;
+    margin-left: 30px;
 }
