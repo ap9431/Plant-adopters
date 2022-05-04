@@ -1,0 +1,9 @@
+.footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-top: 1rem;
+}
+.check{
+    float: right;
+}
