@@ -47,7 +47,7 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact us</a>
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Contact us</a>
                 </li>
                
 
@@ -81,33 +81,81 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="SignupModalLabel">Login as adopter</h5>
+          <h5 class="modal-title" id="SignupModalLabel">Login</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form action="insidesignup.php" method="post">
-        <div class="modal-body">
-          
-        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">
-                          Email</label>
-                          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-                      </div>
-                      <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="password" name="password">
-                      </div>
-                      <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                          <input type="password" class="form-control" id="cpassword" name="cpassword">
-                      </div>
-                      <button type="submit" class="btn btn-success">Login</button>
-                      <button type="submit" class="btn btn-success">Signup</button>
-               
+      
+                  <div class="container">
+              
+              <div class="tab">
+                <button class="tablinks one btn-success" onclick="openCity(event, 'London')">Adopter</button>
+                <button class="tablinks two btn-success" onclick="openCity(event, 'Paris')">Farmer</button>
+              </div>
+              
+              <div id="London" class="tabcontent">
+                <form action="insidesignup.php" method="post">
+                                  
+                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">
+                                    Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="cpassword" name="cpassword">
+                                </div>
+                                <button type="submit" class="btn btn-success ">Login</button><br>
+                                <a href="sign_adopter.html" class="text-center">new to plant adopters?</a>
+                          
+                            
+                            
+                            </form>
+              </div>
+              
+              <div id="Paris" class="tabcontent">
+                <form action="insidesignup.php" method="post">
+              
+                               <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">
+                                    Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="cpassword" name="cpassword">
+                                </div>
+                                <button type="submit" class="btn btn-success">Login</button> <br>
+                                <a href="sign_farmer.html" class="text-center">new to plant farmers?</a>
+                            
+                            
+                            </form>
+              </div>
+              
+              <script>
+              function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+              </script>
+                 
                   </div>
-                  <div class="modal-footer">
-                     
-                     </div>
-                  </form>
               </div>
           </div>
       </div>
@@ -155,8 +203,31 @@
     </div>
     <hr>
       <!--Image and text end-->
-    </div>
 
+      <!--FAQ-->
+
+      <div class="faq">
+        <h3>Frequently Asked Question</h3>
+        
+      </div>
+
+      <!--FAQ END-->
+      <hr>
+      <!--bottom-->
+      <div class="bottom">
+      <h4>Signup For Newsletters</h4>
+      <input type="email"><br>
+      <button class="btn btn-success">Sign Up</button>
+    </div>
+     <!--bottom end-->
+
+     
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <p><span><i class="fa fa-copyright" aria-hidden="true"></i></span>PlantAdopters-2022</p>
+    </div>
+   <!--Footer end-->
     
 </body>
 </html>
