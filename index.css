@@ -2,11 +2,14 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+   
 }
 .nav
 {
     display: inline;
+    background-color: #1daf;
 }
+
 ul,li
 {
     display: inline;
