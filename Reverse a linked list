@@ -1,0 +1,37 @@
+/* Linked List Node structure:
+
+struct Node
+{
+    int data;
+    struct Node *next;
+}
+
+*/
+
+class Solution
+{
+    public:
+    
+    //Function to reverse a linked list.
+    struct Node* reverseList(struct Node *head)
+    {
+        // code here
+        // return head of reversed list
+        
+        struct Node *prev,*nextt;
+        nextt=head;
+        prev=NULL;
+        
+        while(head!=NULL){     
+            
+            nextt=head->next;
+            head->next=prev;
+            prev=head;
+            head=nextt;
+         //   cout<<" fhkkgffdg "<<endl;
+        }
+        
+        return prev;
+    }
+    
+};
