@@ -1,2 +1,2 @@
-# Plant-adopters project
+# Plant-adopters project.
 .
